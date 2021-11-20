@@ -55,7 +55,7 @@ const cssBase64 = require('gulp-css-base64');
 const nib = require('nib');
 const browserSync = require('browser-sync');
 
-const PKG = require('./package.json');
+const PKG = require('./package');
 const BANNER = fs.readFileSync('banner.txt').toString();
 const BANNER_OPTIONS =
 {
@@ -253,6 +253,7 @@ gulp.task('live', gulp.series(
 			{
 				open      : 'external',
 				host      : config.domain,
+				port      : 15024,
 				startPath : '/?info=true',
 				server    :
 				{

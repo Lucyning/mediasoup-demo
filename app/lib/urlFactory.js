@@ -1,4 +1,5 @@
-let protooPort = 4443;
+// let protooPort = 4443;
+let protooPort = 15025;
 
 if (window.location.hostname === 'test.mediasoup.org')
 	protooPort = 4444;
